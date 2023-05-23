@@ -126,7 +126,7 @@ namespace util {
 			return moduleBase;
 		}
 
-		PRTL_PROCESS_MODULES modules = (PRTL_PROCESS_MODULES)ExAllocatePoolWithTag(NonPagedPool, info, 'HEIL');
+		PRTL_PROCESS_MODULES modules = (PRTL_PROCESS_MODULES)ExAllocatePoolWithTag(NonPagedPool, info, 'HELL');
 		status = ZwQuerySystemInformation(SystemModuleInformation, modules, info, &info);
 		if (!NT_SUCCESS(status)) {
 			return moduleBase;
